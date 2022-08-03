@@ -1,0 +1,41 @@
+get:
+  parameters:
+    - name: x-ClientKey
+      in: header
+      description: x-ClientKey
+      required: false
+      content:
+        application/json:
+          schema:
+            $ref: ..\components\schemas\GetAuthToken.yaml
+    - name: x-ApiKey
+      in: header
+      description: x-ApiKey
+      required: false
+      content:
+        application/json:
+          schema:
+            $ref: ..\components\schemas\GetAuthToken.yaml
+  security:
+    - x-ApiKey: []
+    - x-ClientKey: []
+  tags:
+    - Authentication
+  summary: Get Authorization token
+  operationId: GetAuthToken
+  description: >-
+    Once the user is authenticated, this endpoint generates an authorization
+    token by using the API key and Client key. This authorization token is valid
+    for 30 minutes.
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ..\components\schemas\GetAuthToken.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\components\schemas\GetAuthTokenrequestResponse.yaml
