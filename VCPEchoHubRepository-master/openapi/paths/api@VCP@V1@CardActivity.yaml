@@ -6,7 +6,7 @@ post:
     - Virtual Card Program (VCP)
   summary: Virtual Card – Activity
   operationId: VCPCardActivity
-  description: >
+  description: > 
     This API makes sure the card is active, before cancelling or closing the
 
     card. It also helps to check the card balance by showing the
