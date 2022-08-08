@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: ECHOHUB Virtual Card Processing API
+  title: ECHOHUB ACH
   termsOfService: 'https://example.com/terms/'
   contact:
     email: Echo_VCP@echohealthinc.com
