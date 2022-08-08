@@ -18,7 +18,7 @@ info:
 
       There are several situations where a Provider or Payor may want to cancel (Block) the card. 
       The Payor may want to issue another form of payment directly to the Provider through their own process. The Provider may prefer a check or another form of payment (Block and Reissue), or the Provider may want to cancel their current card and opt out of all future cards (Block and Opt Out). These types of card-blocking scenarios can be done through the following API endpoints 
-      -- Block, BlockAndReissue, and BlockAndOptOut.
+      -- Block, BlockAndReissue, and BlockAndOptOut
 
     ## Authorization
       Authorization is used to validate the privileges of access to the API user.  
