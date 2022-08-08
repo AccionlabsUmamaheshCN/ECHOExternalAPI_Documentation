@@ -32,11 +32,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\components\schemas\VCPCardCancel.yaml
+          $ref: ../components/schemas/VCPCardCancel.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\VCPCancelResponse.yaml
+            $ref: ../components/schemas/VCPCancelResponse.yaml

@@ -7,7 +7,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\GetAuthToken.yaml
+            $ref: ../components/schemas/GetAuthToken.yaml
     - name: x-ApiKey
       in: header
       description: x-ApiKey
@@ -15,7 +15,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\GetAuthToken.yaml
+            $ref: ../components/schemas/GetAuthToken.yaml
   security:
     - x-ApiKey: []
     - x-ClientKey: []
