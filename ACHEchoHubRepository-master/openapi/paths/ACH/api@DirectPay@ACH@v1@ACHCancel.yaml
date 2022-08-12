@@ -19,14 +19,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/Request/ACHPaymentCancel.yaml
+          $ref: ../../components/schemas/ACH/Request/ACHPaymentCancel.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Response/ACHPaymentCancelResponse.yaml
+            $ref: ../../components/schemas/ACH/Response/ACHPaymentCancelResponse.yaml
           examples:  
             mapName_001:   
                 description: Please scroll the above dropdown list for more response codes          

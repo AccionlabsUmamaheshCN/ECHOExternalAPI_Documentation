@@ -16,12 +16,6 @@ info:
     ## Authorization
       Authorization is used to validate the privileges of access to the API user.  
 
-    
-
-
-    
-
-
   
 servers:
   - url: 'https://echohealthinc.com/echoexternalapi/api/v1/gettoken'  
@@ -29,6 +23,10 @@ security:
   - x-ApiKey: []
   - x-ClientKey: []
 paths:
+  #Authorization
+  
+  /api/Authentication/v1/Authentication:
+    $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   #ACH
   /api/DirectPay/ACH/v1/ACHPayment:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHPayment.yaml
