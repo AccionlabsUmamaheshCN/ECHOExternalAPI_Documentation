@@ -23,14 +23,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/Request/ACHPaymentStatus.yaml
+          $ref: ../../components/schemas/ACH/Request/ACHPaymentStatus.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Response/ACHPaymentStatusResponse.yaml
+            $ref: ../../components/schemas/ACH/Response/ACHPaymentStatusResponse.yaml
           examples:
               mapName:   
                 description: Please scroll the above dropdown list for more response codes          
