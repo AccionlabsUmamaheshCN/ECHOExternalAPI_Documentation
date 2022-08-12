@@ -20,7 +20,7 @@ get:
     - x-ApiKey: []
     - x-ClientKey: []
   tags:
-    - Authentication
+    - Authentication 
   summary: Get Authorization token
   operationId: GetAuthToken
   description: >-
