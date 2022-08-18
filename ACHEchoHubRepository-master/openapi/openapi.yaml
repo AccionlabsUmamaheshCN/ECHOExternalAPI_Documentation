@@ -1,22 +1,17 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: Automated Clearing House (ACH)
-  termsOfService: 'https://example.com/terms/'
+  title: Automated Clearing House (ACH)  
   contact:
-    email: Echo_Hub@echohealthinc.com
-    url: 'https://echohubDocumentation@echohealthinc.com'
+    email: Echo_Hub@echohealthinc.com    
   
   x-logo:
-    url: 'data:image/png;base64,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'
+    url: https://github.com/AccionlabsUmamaheshCN/ECHODocumentation_ACH/blob/master/ACHEchoHubRepository-master/openapi/paths/Images/ECHO.jpg
   description: >         
       An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
       The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
 
-       # Authentication
-
-      Authentication is a process by which a system verifies the identity of a
-      user accessing this API.
+         
 servers:
   - url: 'https://echohealthinc.com/echoexternalapi/api/v1/gettoken'  
 security:
